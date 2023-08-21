@@ -4,6 +4,59 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.overlay-gradient {
+  background: linear-gradient(180deg, rgba(214, 183, 158, 0), rgb(214, 183, 158));
+}
+
+.overlay-gradient-hide {
+  animation: fadeOutDown 3s 0ms forwards;
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.3333333333%;
+}
+
+.grid-item {
+  float: left;
+  margin-top: 2%;
+}
+
+.grid-item-middle {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }

@@ -71,8 +71,42 @@ $utilities: map-merge(
     ),
   )
 );
+
 // hover for "Oferta"
 .oferta-hover:hover {transition: all 0.2s ease-in-out; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px} 
+
+// gallery overlay
+.overlay-gradient {background: linear-gradient(180deg, rgba(214,183,158,0),rgba(214,183,158,1))}
+.overlay-gradient-hide {animation: fadeOutDown 3s 0ms forwards}
+@keyframes fadeOutDown {
+  from {opacity: 1; transform: translateY(0%)} 
+  to {opacity: 0; transform: translateY(100%)}
+}
+
+// custom mansory images gallery
+* { box-sizing: border-box; margin: 0}
+html { overflow-y: scroll; }
+.grid:after {
+  content: '';
+  display: block;
+  clear: both
+}
+.grid-sizer,
+.grid-item {
+  width: calc(100% / 3)
+}
+.grid-item {
+  float: left;
+  margin-top: 2%
+}
+.grid-item-middle {
+  padding-left: 2%;
+  padding-right: 2%
+}
+.grid-item img {
+  display: block;
+  width: 100%
+}
 
 @import "../node_modules/bootstrap/scss/utilities/api";
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

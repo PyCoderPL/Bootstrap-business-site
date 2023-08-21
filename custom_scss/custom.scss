@@ -1,0 +1,34 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/variables-dark';
+
+// custom colors
+$custom-color: (
+  "darkgreen": #1B5B31,
+  "sand": #DCC1AB,
+  "lightsand": #F5F0EC
+);
+$theme-colors: map-merge($map1: $theme-colors, $map2: $custom-color);
+
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/utilities';
+
+// custom font family
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-family": map-merge(
+      map-get($utilities, "font-family"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "font-family"), "values"),
+          (montserrat: Montserrat),
+        ),
+      ),
+    ),
+  )
+);
+
+@import "../node_modules/bootstrap/scss/utilities/api";
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

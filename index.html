@@ -33,24 +33,22 @@
                 Oferta
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Projekt 1</a>
-                <a class="dropdown-item" href="#">Projekt 2</a>
+                <a class="dropdown-item" href="#offer">Projekt</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Wizualizacja 1</a>
-                <a class="dropdown-item" href="#">Wizualizacja 2</a>
+                <a class="dropdown-item" href="#offer">Wizualizacja</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Realizacja 1</a>
-                <a class="dropdown-item" href="#">Realizacja 2</a>
+                <a class="dropdown-item" href="#offer">Realizacja 1</a>
+
               </div>
             </li>
               <li class="nav-item">
-            <a class="nav-link text-black" href="#">O firmie</a>
+            <a class="nav-link text-black" href="#about">O firmie</a>
             </li>
               <li class="nav-item">
-            <a class="nav-link text-black" href="#">Realizacje</a>
+            <a class="nav-link text-black" href="#work">Realizacje</a>
             </li>
               <li class="nav-item">
-            <a class="nav-link text-black" href="#">Kontakt</a>
+            <a class="nav-link text-black" href="#contact">Kontakt</a>
               </li>
             <li class="nav-item d-flex">
               <i class="fas fa-search my-auto me-2" role="button" data-bs-toggle="collapse" data-bs-target="#searchBar"></i>
@@ -64,7 +62,7 @@
     </div>
   </nav>
   <!-- HERO -->
-  <div class="row h-75 m-0 flex-nowrap">
+  <div class="row vh-sm-60 vh-xl-70 m-0 flex-nowrap">
     <!-- hero left -->
     <div class="col col-sm-7 col-lg-6 h-100 bg-sand">
       <div class="m-5">
@@ -111,8 +109,8 @@
     </div>
   </div>  
   <!-- OFERTA -->
-  <div class="d-flex flex-column justify-content-center gap-5 justify-content-lg-around align-items-center h-75 w-100 bg-lightsand">
-    <div class="d-flex flex-column col-sm-8 col-xl-5">
+  <div class="position-relative d-flex flex-column justify-content-center gap-5 justify-content-lg-around align-items-center h-75 w-100 bg-lightsand" id="offer">
+    <div class="d-flex flex-column col-sm-8 col-xl-5 mt-5">
       <h5 class="text-success text-capitalize">oferta</h5>
       <div class="d-flex flex-column">
         <h1 class="fw-medium display-5 mb-4">
@@ -126,8 +124,8 @@
         </div>
       </div>  
     </div>
-    <div class="d-flex w-100 justify-content-around justify-content-xl-center gap-2 gap-xl-5 px-2">
-      <div class="card border-0 rounded-4 col col-lg-4 col-xl-3 col-xxl-2" >
+    <div class="d-flex w-100 justify-content-around justify-content-xl-center gap-2 gap-xl-5 px-2 pb-xl-5">
+      <div class="card border-0 rounded-4 col col-lg-4 col-xl-3 col-xxl-2 oferta-hover" >
         <div class="card-body">
           <img src="images/icons/pencil.png" class="mb-3"></img>
           <h3 class="text-capitalize">projekty</h3>
@@ -139,7 +137,7 @@
           </a>
         </div>
       </div>
-      <div class="card border-0 rounded-4 col col-lg-4 col-xl-3 col-xxl-2" >
+      <div class="card border-0 rounded-4 col col-lg-4 col-xl-3 col-xxl-2 oferta-hover" >
         <div class="card-body">
           <img src="images/icons/eye.png" class="mb-3"></img>
           <h3 class="text-capitalize">wizualizacje</h3>
@@ -151,7 +149,7 @@
           </a>
         </div>
       </div>
-      <div class="card border-0 rounded-4 col col-lg-4 col-xl-3 col-xxl-2" >
+      <div class="card border-0 rounded-4 col col-lg-4 col-xl-3 col-xxl-2 oferta-hover" >
         <div class="card-body">
           <img src="images/icons/stars.png" class="mb-3"></img>
           <h3 class="text-capitalize">realizacje</h3>
@@ -165,7 +163,97 @@
       </div>
     </div>
   </div>
+  <!-- O FIRMIE -->
+  <div class="z-0 row vh-sm-40 vh-lg-50 vh-xl-60 vh-70 g-0 flex-nowrap" id="about">
+    <div class="col-1 col-sm-2 col-lg-4 col-xl">
+      <img src="images/hero/4.jpg" style="object-fit:cover;height:100%;width:100%;" alt="...">
+    </div>
+    <div class="col-11 col-sm-10 col-lg-8 col-xl position-relative bg-darkgreen">
+    <!-- <div class="col position-relative bg-darkgreen" style="min-width: 800px"> -->
+      <div class="position-absolute top-50 start-50 translate-middle w-75 ps-5 text-white">
+        <p class="text-capitalize">o firmie</p>
+        <h1 class="mb-5">
+            <span class="text-capitalize">tworzymy</span> z
+            <span class="fst-italic">pasją</span>
+        </h1>
+        <p class="mb-5">
+          <span class="text-capitalize">każdy</span> projekt to nowe wyzwanie. 
+          <span class="text-capitalize">dlatego</span> nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego 
+          <span class="text-capitalize">klienta. nasza</span> specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. 
+          <span class="text-capitalize">tworzymy</span> ogrody  małoobsługowe, dostosowane do współczesnego trybu życia.
+        </p>
+        <a class="btn btn-outline-light rounded-5 px-4 py-2" href="" role="button">
+          <span class="text-capitalize">poznaj</span> nas bliżej &rarr;
+        </a> 
+      </div>
+    </div>
+  </div>
+  <!-- PROJEKTY -->
+  <div class="z-0 bg-sand" id="work">
+    <div class="container py-5">
+      <h5 class="text-darkgreen text-capitalize mb-3">realizacje</h5>
+      <h1 class="mb-3">
+        <span class="text-capitalize">nasze</span>
+        <span class="fst-italic">projekty</span>
+      </h1>
+    </div>
+    <div class="grid position-relative">
+      <div >
+        <div id="overlay-gallery" class="position-absolute top-50 w-100 h-50 z-1 overlay-gradient"></div>
+      </div>
+      <div class="grid-sizer"></div>
+      <div class="grid-item">
+        <a href="#imageModal" data-bs-toggle="modal">
+          <img src="./images/projects/project-1.png" />
+        </a>
+      </div>
+      <div class="grid-item grid-item-middle">
+        <img src="./images/projects/project-2.png" />
+      </div>
+      <div class="grid-item">
+        <img src="./images/projects/project-3.png" />
+      </div>
+      <div class="grid-item grid-item-middle">
+        <img src="./images/projects/project-4.png" />
+      </div>
+      <div class="grid-item">
+        <img src="./images/projects/project-5.png" />
+      </div>
+      <div class="grid-item">
+        <img src="./images/projects/project-6.png" />
+      </div>
+      <div class="grid-item grid-item-middle">
+        <img src="./images/projects/project-7.png" />
+      </div>
+      <div class="grid-item">
+        <img src="./images/projects/project-8.png" />
+      </div>
+      <div class="grid-item">
+        <img src="./images/projects/project-9.png" />
+      </div>
+      <div class="position-absolute bottom-0 start-50 translate-middle-x pb-5 z-2">
+        <a id="expandBtn" class="expandBtn btn btn-outline-dark rounded-5 px-4 py-2 text-capitalize fs-4" href="#expandgallery" role="button">rozwiń &darr;</a>  
+      </div>
+    </div>
+  </div>
+  <!-- image modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-center">
+          <img src="./images/projects/project-1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
    
+  <div id="contact"></div>
+
+
+
   <!-- Bootstrap 5.3.1 link -->
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

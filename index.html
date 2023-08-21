@@ -134,7 +134,7 @@
           <p class="card-text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
         </div>
         <div class="card-body">
-          <a href="" class="link-success mt-5 fw-semibold">
+          <a href="" class="link-success link-offset-3 mt-5 fw-semibold">
             <span class="text-capitalize">dowiedz</span> się więcej &rarr;
           </a>
         </div>
@@ -146,7 +146,7 @@
           <p class="card-text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
         </div>
         <div class="card-body">
-          <a href="" class="link-success mt-5 fw-semibold">
+          <a href="" class="link-success link-offset-3 mt-5 fw-semibold">
             <span class="text-capitalize line">dowiedz</span> się więcej &rarr;
           </a>
         </div>
@@ -158,7 +158,7 @@
           <p class="card-text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
         </div>
         <div class="card-body">
-          <a href="" class="link-success mt-5 fw-semibold">
+          <a href="" class="link-success link-offset-3 mt-5 fw-semibold">
             <span class="text-capitalize">zobacz</span> nasze realizacje &rarr;
           </a>
         </div>
@@ -166,7 +166,7 @@
     </div>
   </div>
   <!-- O FIRMIE -->
-  <div class="z-0 row vh-sm-50 vh-xl-60 vh-70 g-0 flex-nowrap" id="about">
+  <div class="row vh-sm-50 vh-xl-60 vh-70 g-0 flex-nowrap" id="about">
     <div class="col-1 col-sm-2 col-lg-4 col-xl">
       <img src="images/hero/4.jpg" style="object-fit:cover;height:100%;width:100%;" alt="...">
     </div>
@@ -191,7 +191,7 @@
     </div>
   </div>
   <!-- PROJEKTY -->
-  <div class="z-0 bg-sand" id="work">
+  <div class="bg-sand" id="work">
     <div class="container py-5">
       <h5 class="text-darkgreen text-capitalize mb-3">realizacje</h5>
       <h1 class="mb-3">
@@ -254,24 +254,55 @@
       </div>
     </div>
   </div>
-  <!-- image modal popup -->
-  <div>
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <!-- INSTAGRAM -->
+  <div class="row justify-content-center align-items-center m-0 px-5 vh-40 vh-xl-60 py-xl-5 bg-lightsand">
+    <div class="col col-xl-8 d-flex align-items-center h-sm-50 h-lg-75 m-0 p-4 p-lg-5 bg-darkgreen text-white"> 
+      <div class="col col-sm-9">
+        <h1 class="m-0">
+          <span class="text-capitalize">zostańmy</span> w kontakcie! <br>
+          <span class="text-capitalize">znajdziesz</span> nas na 
+          <span class="text-capitalize fst-italic">instagramie.</span>
+        </h1>
+      </div>
+      <div class="col col-sm-3 m-0">
+        <p><span class="text-capitalize">śledź</span> nasze <br> najnowsze realizacje!</p>
+        <a class="btn btn-light rounded-5 px-4 py-2 text-capitalize" href="" role="button">instagram</a> 
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <div class="bg-black text-white" id="contact">
+    <div class="container p-5">
+      <div class="d-block py-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="" class="link-light link-underline-opacity-0"><span class="fw-bold">giard</span>design</a>
+          <div class="d-flex gap-3 align-items-center">
+            <p class="m-0"><span class="text-capitalize">daj</span> znać, co możemy dla ciebie zrobić!</p>
+            <a class="btn btn-darkgreen rounded-5" href="" role="button">
+              <span class="text-capitalize">skontaktuj</span> się z nami
+            </a> 
           </div>
-          <div class="modal-body d-flex justify-content-center">
-            <img src="./images/projects/project-1.png" alt="">
+        </div>
+        <div class="rounded-5 my-5 border"></div>        
+        <div class="d-flex justify-content-between align-items-start">
+          <div class="d-flex gap-4 text-capitalize">
+            <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">kontakt</a>
+            <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">instagram</a>
+            <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">facebook</a>
+            <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">linkedin</a>
+          </div>
+          <div class="d-flex flex-wrap justify-content-end gap-4">
+            <p class="m-0">+48 123-456-789</p>
+            <a href="giarddesign@kontakt.pl" class="link-light link-underline-opacity-0 link-opacity-50-hover link-underline-opacity-75-hover link-offset-3-hover">giarddesign@kontakt.pl</a>
           </div>
         </div>
       </div>
-    </div>    
+      <div class="d-flex justify-content-between py-2 mt-3">
+        <p><span class="text-capitalize">prawa</span> zastrzeżone &copy 2022</p>
+        <p>made by <img src="images/footer/logo-full-light.png" alt=""></p>
+      </div>
+    </div>
   </div>
->
-   
-  <div id="contact"></div>
 
   <!-- Bootstrap 5.3.1 link -->
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -296,12 +327,17 @@
 
       // expand overlay gallery
       const expandBtn = document.querySelector('#expandBtn');
-      const overlayGallery = document.querySelector('#overlay-gallery');
+      const overlay = document.querySelector('#overlay-gallery');
       expandBtn.addEventListener('click', (e) => {
           e.preventDefault();
-          overlayGallery.classList.add('overlay-gradient-hide');
+          overlay.classList.add('overlay-gradient-hide');
           expandBtn.classList.add('d-none');
-      });
+          setTimeout(() => {
+            overlay.classList.remove('z-1');
+            overlay.classList.add('z-n1');
+          }, 1000);
+        });
+        
       // init Glightbox image popup
       const lightbox = GLightbox({
         touchNavigation: true,

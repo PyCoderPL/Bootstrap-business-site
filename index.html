@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./node_modules/glightbox/dist/css/glightbox.min.css">
     <title>GiardDesign - ogrody</title>
 </head>
-<body class="font-montserrat vh-100 vw-100">
+<body class="font-montserrat min-vh-100">
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-md bg-white position-sticky top-0 z-3">
     <div class="container-fluid py-1 px-5">
@@ -39,12 +39,12 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#offer">Wizualizacja</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#offer">Realizacja 1</a>
+                <a class="dropdown-item" href="#offer">Realizacja</a>
 
               </div>
             </li>
-              <li class="nav-item">
-            <a class="nav-link text-black" href="#about">O firmie</a>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#about">O firmie</a>
             </li>
               <li class="nav-item">
             <a class="nav-link text-black" href="#work">Realizacje</a>
@@ -64,21 +64,21 @@
     </div>
   </nav>
   <!-- HERO -->
-  <div class="row vh-sm-60 vh-xl-70 m-0 flex-nowrap">
-    <!-- hero left -->
-    <div class="col col-sm-7 col-lg-6 h-100 bg-sand">
+  <div class="row vh-lg-70 m-0 flex-wrap">
+    <!-- hero left --> 
+    <div class="col-lg-7 col-xl-6 bg-sand">
       <div class="m-5">
         <h1 class="mb-5">
           <span class="text-capitalize">nowoczesna</span><br>aranżacja<br> 
           <span class="text-capitalize">twojego</span> ogrodu
         </h1>
-        <p class="mb-5 w-75">
+        <p class="mb-5 col-10">
           <span class="text-capitalize">marka giard</span>
-          <span class="text-capitalize">&nbsp;design</span> to wieloletnie doświadczenie i wysoka estetyka realizacji.
+          <span class="text-capitalize">design</span> to wieloletnie doświadczenie i wysoka estetyka realizacji.
           <span class="text-capitalize">oferujemy</span> kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.
         </p>
-        <div class="d-flex flex-wrap gap-4 between text-nowrap w-75">
-          <a class="btn btn-darkgreen rounded-5 px-4 py-2" href="" role="button">
+        <div class="d-flex flex-wrap flex-xl-nowrap col-10 gap-4 text-nowrap">
+          <a class="btn btn-darkgreen rounded-5 px-4 py-2 blink-link" href="" role="button">
             <span class="text-capitalize">skontaktuj</span> się z nami
           </a>
           <a class="btn btn-outline-darkgreen rounded-5 px-4 py-2" href="" role="button">
@@ -88,46 +88,50 @@
       </div>
     </div>
     <!-- hero slider -->
-    <div class="col col-sm-5 col-lg-6 h-100 carousel slide p-0" id="carouselExample">
+    <div class="col-lg-5 col-xl-6 h-100 carousel slide p-0" id="heroCarousel" data-bs-ride="carousel">
       <div class="carousel-inner h-100">
         <div class="carousel-item h-100 active">
-          <img src="images/hero/1.jpg" style="object-fit:cover;min-height:100%;min-width:100%" alt="...">
+          <img src="images/hero/1.jpg" style="object-fit:cover;height:100%;width:100%" alt="...">
         </div>
         <div class="carousel-item h-100">
-          <img src="images/hero/2.jpg" style="object-fit:cover;min-height:100%;min-width:100%" alt="...">
+          <img src="images/hero/2.jpg" style="object-fit:cover;height:100%;width:100%" alt="...">
         </div>
         <div class="carousel-item h-100">
-          <img src="images/hero/3.jpg" style="object-fit:cover;min-height:100%;min-width:100%" alt="...">
+          <img src="images/hero/3.jpg" style="object-fit:cover;height:100%;width:100%" alt="...">
         </div>
       </div>
       <div class="d-flex position-absolute bottom-0 end-0">
-        <button class="border-0 fs-1 px-5 py-4 bg-lightsand" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="border-0 fs-1 px-5 py-4 bg-lightsand" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
           <i class="fa-solid fa-arrow-left"></i>
         </button>
-        <button class="border-0 fs-1 px-5 py-4 bg-lightsand" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="border-0 fs-1 px-5 py-4 bg-lightsand" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
           <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
     </div>
   </div>  
   <!-- OFERTA -->
-  <div class="position-relative d-flex flex-column justify-content-center gap-5 justify-content-lg-around align-items-center h-75 w-100 bg-lightsand" id="offer">
-    <div class="d-flex flex-column col-sm-8 col-xl-5 mt-5">
-      <h5 class="text-success text-capitalize">oferta</h5>
-      <div class="d-flex flex-column">
-        <h1 class="fw-medium display-5 mb-4">
-          <span class="text-capitalize">działamy</span>
-          <span class="fst-italic">kompleksowo</span>
-        </h1>
-        <div class="">
-          <span class="text-capitalize">oferujemy</span> kompletną obsługę inwestycji terenów zielonych.
-          <span class="text-capitalize">Projektujemy</span> nowoczesne ogrody przydomowe oraz rezydencjonalne.
-          <span class="text-capitalize">Stworzymy</span> dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+  <div class="d-flex flex-column justify-content-around align-items-center gap-lg-5 vh-md-70 py-3 py-md-0 bg-lightsand" id="offer">
+    <!-- offer header -->
+    <div class="col-12 col-sm-10 col-xxl-7 d-flex flex-column mx-2 px-4 ps-sm-4 pe-sm-0">
+      <div class="col-xl-9">
+        <h5 class="text-success text-capitalize">oferta</h5>
+        <div class="d-flex flex-column">
+          <h1 class="fw-medium display-5 mb-2 mb-sm-4">
+            <span class="text-capitalize">działamy</span>
+            <span class="fst-italic">kompleksowo</span>
+          </h1>
+          <div class="mb-2">
+            <span class="text-capitalize">oferujemy</span> kompletną obsługę inwestycji terenów zielonych.
+            <span class="text-capitalize">Projektujemy</span> nowoczesne ogrody przydomowe oraz rezydencjonalne.
+            <span class="text-capitalize">Stworzymy</span> dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+          </div>
         </div>
-      </div>  
+      </div>
     </div>
-    <div class="d-flex w-100 justify-content-around justify-content-xl-center gap-2 gap-xl-5 px-2 pb-xl-5">
-      <div class="card border-0 rounded-4 col col-lg-4 col-xl-3 col-xxl-2 oferta-hover" >
+    <!-- offer card x3 -->
+    <div class="col-12 col-xxl-7 d-flex flex-column align-items-center flex-md-row justify-content-around align-items-md-stretch gap-2 mx-2">
+      <div class="card border-0 rounded-4 oferta-hover" style="width: 18rem">
         <div class="card-body">
           <img src="images/icons/pencil.png" class="mb-3"></img>
           <h3 class="text-capitalize">projekty</h3>
@@ -139,7 +143,7 @@
           </a>
         </div>
       </div>
-      <div class="card border-0 rounded-4 col col-lg-4 col-xl-3 col-xxl-2 oferta-hover" >
+      <div class="card border-0 rounded-4 oferta-hover" style="width: 18rem">
         <div class="card-body">
           <img src="images/icons/eye.png" class="mb-3"></img>
           <h3 class="text-capitalize">wizualizacje</h3>
@@ -151,7 +155,7 @@
           </a>
         </div>
       </div>
-      <div class="card border-0 rounded-4 col col-lg-4 col-xl-3 col-xxl-2 oferta-hover" >
+      <div class="card border-0 rounded-4 oferta-hover" style="width: 18rem">
         <div class="card-body">
           <img src="images/icons/stars.png" class="mb-3"></img>
           <h3 class="text-capitalize">realizacje</h3>
@@ -166,19 +170,18 @@
     </div>
   </div>
   <!-- O FIRMIE -->
-  <div class="row vh-sm-50 vh-xl-60 vh-70 g-0 flex-nowrap" id="about">
-    <div class="col-1 col-sm-2 col-lg-4 col-xl">
+  <div class="row vh-70 vh-sm-50 vh-xl-70 g-0" id="about">
+    <div class="col-1 col-sm-2 col-lg-4 col-xl h-100">
       <img src="images/hero/4.jpg" style="object-fit:cover;height:100%;width:100%;" alt="...">
     </div>
-    <div class="col-11 col-sm-10 col-lg-8 col-xl position-relative bg-darkgreen">
-    <!-- <div class="col position-relative bg-darkgreen" style="min-width: 800px"> -->
-      <div class="position-absolute top-50 start-50 translate-middle w-75 ps-5 text-white">
+    <div class="col-11 col-sm-10 col-lg-8 col-xl d-flex justify-content-center align-items-center bg-darkgreen">
+      <div class="w-75 ps-0 ps-md-5 text-white">
         <p class="text-capitalize">o firmie</p>
-        <h1 class="mb-5">
+        <h1 class="mb-3 mb-md-5">
             <span class="text-capitalize">tworzymy</span> z
             <span class="fst-italic">pasją</span>
         </h1>
-        <p class="mb-5">
+        <p class="mb-3 mb-md-5">
           <span class="text-capitalize">każdy</span> projekt to nowe wyzwanie. 
           <span class="text-capitalize">dlatego</span> nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego 
           <span class="text-capitalize">klienta. nasza</span> specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. 
@@ -249,61 +252,111 @@
           <img src="./images/projects/project-9.png" />
         </a>
       </div>
+      <!-- hidden gallery -->
+      <div class="d-none grid-item grid-item-middle">
+        <a href="./images/projects/project-1.png" class="glightbox">
+          <img src="./images/projects/project-1.png" />
+        </a>
+      </div>
+      <div class="d-none grid-item">
+        <a href="./images/projects/project-2.png" class="glightbox">
+          <img src="./images/projects/project-2.png" />
+        </a>
+      </div>
+      <div class="d-none grid-item">
+        <a href="./images/projects/project-3.png" class="glightbox">
+          <img src="./images/projects/project-3.png" />
+        </a>
+      </div>
+      <div class="d-none grid-item">
+        <a href="./images/projects/project-4.png" class="glightbox">
+          <img src="./images/projects/project-4.png" />
+        </a>
+      </div>
+      <div class="d-none grid-item  grid-item-middle">
+        <a href="./images/projects/project-5.png" class="glightbox">
+          <img src="./images/projects/project-5.png" />
+        </a>
+      </div>
+      <div class="d-none grid-item">
+        <a href="./images/projects/project-6.png" class="glightbox">
+          <img src="./images/projects/project-6.png" />
+        </a>
+      </div>
+      <div class="d-none grid-item">
+        <a href="./images/projects/project-7.png" class="glightbox">
+          <img src="./images/projects/project-7.png" />
+        </a>
+      </div>
+      <div class="d-none grid-item grid-item-middle">
+        <a href="./images/projects/project-8.png" class="glightbox">
+          <img src="./images/projects/project-8.png" />
+        </a>
+      </div>
+      <div class="d-none grid-item">
+        <a href="./images/projects/project-9.png" class="glightbox">
+          <img src="./images/projects/project-9.png" />
+        </a>
+      </div>
       <div class="position-absolute bottom-0 start-50 translate-middle-x pb-5 z-2">
         <a id="expandBtn" class="expandBtn btn btn-outline-dark rounded-5 px-4 py-2 text-capitalize fs-4" href="#expandgallery" role="button">rozwiń &darr;</a>  
       </div>
     </div>
   </div>
   <!-- INSTAGRAM -->
-  <div class="row justify-content-center align-items-center m-0 px-5 vh-40 vh-xl-60 py-xl-5 bg-lightsand">
-    <div class="col col-xl-8 d-flex align-items-center h-sm-50 h-lg-75 m-0 p-4 p-lg-5 bg-darkgreen text-white"> 
-      <div class="col col-sm-9">
-        <h1 class="m-0">
+  <div class="row justify-content-center align-items-center vh-40 vh-md-50 m-0 px-0 px-sm-5 bg-lightsand">
+    <div class="col col-lg-9 d-flex align-items-center h-75 h-sm-50 h-lg-75 m-0 p-4 p-lg-5 gap-2 bg-darkgreen text-white flex-wrap"> 
+      <div class="col col-lg-8">
+        <h1 class="m-0 d-none d-sm-block">
           <span class="text-capitalize">zostańmy</span> w kontakcie! <br>
           <span class="text-capitalize">znajdziesz</span> nas na 
           <span class="text-capitalize fst-italic">instagramie.</span>
         </h1>
+        <p class="fw-semibold m-0 d-sm-none">
+          <span class="text-capitalize">zostańmy</span> w kontakcie!
+        </p>
+        <p class="fw-semibold m-0 d-sm-none mt-2">
+          <span class="text-capitalize">znajdziesz</span> nas na 
+          <span class="text-capitalize fst-italic">instagramie.</span>
+        </p>
       </div>
-      <div class="col col-sm-3 m-0">
+      <div class="col-auto">
         <p><span class="text-capitalize">śledź</span> nasze <br> najnowsze realizacje!</p>
         <a class="btn btn-light rounded-5 px-4 py-2 text-capitalize" href="" role="button">instagram</a> 
       </div>
     </div>
   </div>
   <!-- FOOTER -->
-  <div class="bg-black text-white" id="contact">
-    <div class="container p-5">
-      <div class="d-block py-5">
-        <div class="d-flex justify-content-between align-items-center">
-          <a href="" class="link-light link-underline-opacity-0"><span class="fw-bold">giard</span>design</a>
-          <div class="d-flex gap-3 align-items-center">
-            <p class="m-0"><span class="text-capitalize">daj</span> znać, co możemy dla ciebie zrobić!</p>
-            <a class="btn btn-darkgreen rounded-5" href="" role="button">
-              <span class="text-capitalize">skontaktuj</span> się z nami
-            </a> 
-          </div>
-        </div>
-        <div class="rounded-5 my-5 border"></div>        
-        <div class="d-flex justify-content-between align-items-start">
-          <div class="d-flex gap-4 text-capitalize">
-            <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">kontakt</a>
-            <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">instagram</a>
-            <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">facebook</a>
-            <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">linkedin</a>
-          </div>
-          <div class="d-flex flex-wrap justify-content-end gap-4">
-            <p class="m-0">+48 123-456-789</p>
-            <a href="giarddesign@kontakt.pl" class="link-light link-underline-opacity-0 link-opacity-50-hover link-underline-opacity-75-hover link-offset-3-hover">giarddesign@kontakt.pl</a>
-          </div>
+  <div class="d-flex justify-content-center align-items-center vh-40 vh-lg-50 bg-darkgray text-white" id="contact">
+    <div class="col col-xl-9 d-flex flex-column justify-content-between h-75 px-2 px-sm-4 px-lg-5">
+      <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <a href="" class="link-light link-underline-opacity-0 pb-1"><span class="fw-bold">giard</span>design</a>
+        <div class="d-inline-flex flex-wrap align-items-center gap-1 gap-sm-3">
+          <p class="m-0 pb-1"><span class="text-capitalize">daj</span> znać, co możemy dla ciebie zrobić!</p>
+          <a class="btn btn-darkgreen rounded-5" href="" role="button">
+            <span class="text-capitalize">skontaktuj</span> się z nami
+          </a> 
         </div>
       </div>
-      <div class="d-flex justify-content-between py-2 mt-3">
-        <p><span class="text-capitalize">prawa</span> zastrzeżone &copy 2022</p>
-        <p>made by <img src="images/footer/logo-full-light.png" alt=""></p>
+      <div class="rounded-5 border"></div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 mb-sm-4 mb-md-5">
+        <div class="d-flex gap-2 gap-md-3 text-capitalize">
+          <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">kontakt</a>
+          <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">instagram</a>
+          <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">facebook</a>
+          <a href="" class="link-light link-underline-opacity-0 link-opacity-50-hover">linkedin</a>
+        </div>
+        <div class="d-flex justify-content-end align-content-between gap-2 gap-md-3">
+          <p class="m-0">+48 123-456-789</p>
+          <a href="giarddesign@kontakt.pl" class="link-light link-underline-opacity-0 link-opacity-50-hover link-underline-opacity-75-hover link-offset-3-hover">giarddesign@kontakt.pl</a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between flex-wrap mt-sm-4 mt-md-5">
+        <p class="m-0"><span class="text-capitalize">prawa</span> zastrzeżone &copy 2022</p>
+        <p class="m-0">made by <img src="images/footer/logo-full-light.png" alt=""></p>
       </div>
     </div>
   </div>
-
   <!-- Bootstrap 5.3.1 link -->
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!-- ImagesLoades plugin for Masonry -->
@@ -313,25 +366,33 @@
   <!-- Glightbox image modal -->
   <script src="./node_modules/glightbox/dist/js/glightbox.min.js"></script>
   <script>
-      // init Masonry
-      var grid = document.querySelector('.grid');
-      var msnry = new Masonry( grid, {
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      percentPosition: true
-      });
-      imagesLoaded( grid ).on( 'progress', function() {
-      // layout Masonry after each image loads
-      msnry.layout();
-      });
+      // init Masonry func
+      const initMasonry = () => {
+        var grid = document.querySelector('.grid');
+        var msnry = new Masonry( grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+        });
+        imagesLoaded( grid ).on( 'progress', function() {
+        // layout Masonry after each image loads
+        msnry.layout();
+        });
+      };
+      initMasonry();      
 
-      // expand overlay gallery
+      // custom expand gallery
       const expandBtn = document.querySelector('#expandBtn');
       const overlay = document.querySelector('#overlay-gallery');
+      const hiddenImages = document.querySelectorAll('.d-none.grid-item');
       expandBtn.addEventListener('click', (e) => {
           e.preventDefault();
-          overlay.classList.add('overlay-gradient-hide');
-          expandBtn.classList.add('d-none');
+          hiddenImages.forEach((img) => {
+            overlay.classList.add('overlay-gradient-hide');
+            expandBtn.classList.add('d-none');
+            img.classList.remove('d-none');
+            initMasonry();
+          });
           setTimeout(() => {
             overlay.classList.remove('z-1');
             overlay.classList.add('z-n1');

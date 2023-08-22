@@ -5,6 +5,7 @@
 // custom colors
 $custom-color: (
   "darkgreen": #1B5B31,
+  "darkgray": #111111,
   "sand": #DCC1AB,
   "lightsand": #F5F0EC
 );
@@ -51,33 +52,29 @@ $utilities: map-merge(
     ),
   )
 );
+// custom text-align
 $utilities: map-merge(
   $utilities,
   (
-    "min-viewport-height": map-merge(
-      map-get($utilities, "min-viewport-height"),
+    "text-align": map-merge(
+      map-get($utilities, "text-align"),
       (
         values: map-merge(
-          map-get(map-get($utilities, "min-viewport-height"), "values"),
+          map-get(map-get($utilities, "text-align"), "values"),
           (
-            40: 40vh,
-            50: 50vh,
-            60: 60vh,
-            70: 70vh,
-            80: 80vh
+            justify: justify,
           ),
         ),
       ),
     ),
   )
 );
-
 // hover for "Oferta"
 .oferta-hover:hover {transition: all 0.2s ease-in-out; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px} 
 
 // gallery overlay
 .overlay-gradient {background: linear-gradient(180deg, rgba(214,183,158,0),rgba(214,183,158,1))}
-.overlay-gradient-hide {animation: fadeOutDown 3s 0ms forwards}
+.overlay-gradient-hide {animation: fadeOutDown 5s 0ms forwards}
 @keyframes fadeOutDown {
   from {opacity: 1; transform: translateY(0%)} 
   to {opacity: 0; transform: translateY(100%)}

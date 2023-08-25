@@ -10,6 +10,6 @@ I use:
 3. imagesLoaded script (JS plugin to resolve images overlaping)
 4. Glightbox (JS plugin to add modal for images)
 
-Site was created mostly for Ipad and bigger resolutions.
+Site was created mostly for iPhone iPad and bigger resolutions.
 
 Live demo: http://adrespect.server054599.nazwa.pl/

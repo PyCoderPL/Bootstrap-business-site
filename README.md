@@ -1,6 +1,6 @@
 # Bootstrap-business-site
 
-Bootstrap business site. This site was created as recruitment task for asRespect
+Bootstrap business site. This site was created as recruitment task for adRespect
 agency. Layout belongs to the agency but code is mine.
 
 I use:
@@ -10,6 +10,6 @@ I use:
 3. imagesLoaded script (JS plugin to resolve images overlaping)
 4. Glightbox (JS plugin to add modal for images)
 
-Site was created mostly for iPhone iPad and bigger resolutions.
+Site was created mostly for iPhone, iPad and bigger resolutions.
 
 Live demo: http://adrespect.server054599.nazwa.pl/
